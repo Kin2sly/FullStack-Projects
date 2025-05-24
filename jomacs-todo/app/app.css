@@ -114,7 +114,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+  * {
+    @apply font-["Roboto",sans-serif];
+  }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  @apply bg-slate-100;
 }

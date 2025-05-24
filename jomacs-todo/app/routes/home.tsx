@@ -1,5 +1,6 @@
 import { Button } from "~/components/ui/button";
 import type { Route } from "./+types/home";
+import { HomePage } from "~/components/homePage/HomePage";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,11 +11,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <>
-      <div className="bg-red-500">
-        <Button variant={"default"}>Click</Button>
-        Hello World
-      </div>
-    </>
+    <main className="w-screen h-screen">
+      <HomePage />
+    </main>
   );
 }
